@@ -11,6 +11,7 @@
 		0362ABE1297E80ED00277ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362ABE0297E80ED00277ECD /* ContentView.swift */; };
 		0362ABE3297E80EF00277ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0362ABE2297E80EF00277ECD /* Assets.xcassets */; };
 		0362ABE6297E80EF00277ECD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0362ABE5297E80EF00277ECD /* Preview Assets.xcassets */; };
+		0378CC5E29C0C78B00BE331F /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0378CC5D29C0C78B00BE331F /* TextBox.swift */; };
 		0386E4B729BCD56E008A5A38 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386E4B629BCD56E008A5A38 /* ImageEditorView.swift */; };
 		0386E4BA29BCD60B008A5A38 /* ImageEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386E4B929BCD60B008A5A38 /* ImageEditorViewModel.swift */; };
 		0386E4BC29BCD64B008A5A38 /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386E4BB29BCD64B008A5A38 /* PhotoEditorView.swift */; };
@@ -23,6 +24,7 @@
 		0362ABE0297E80ED00277ECD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0362ABE2297E80EF00277ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0362ABE5297E80EF00277ECD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0378CC5D29C0C78B00BE331F /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 		0386E4B629BCD56E008A5A38 /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
 		0386E4B929BCD60B008A5A38 /* ImageEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorViewModel.swift; sourceTree = "<group>"; };
 		0386E4BB29BCD64B008A5A38 /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				0386E4B929BCD60B008A5A38 /* ImageEditorViewModel.swift */,
 				0386E4BB29BCD64B008A5A38 /* PhotoEditorView.swift */,
 				0386E4BD29BCDF1F008A5A38 /* DrawingScreen.swift */,
+				0378CC5D29C0C78B00BE331F /* TextBox.swift */,
 			);
 			path = ImageEditor;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				0386E4BE29BCDF1F008A5A38 /* DrawingScreen.swift in Sources */,
 				0362ABDF297E80ED00277ECD /* TestOneApp.swift in Sources */,
 				0386E4BA29BCD60B008A5A38 /* ImageEditorViewModel.swift in Sources */,
+				0378CC5E29C0C78B00BE331F /* TextBox.swift in Sources */,
 				0386E4BC29BCD64B008A5A38 /* PhotoEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				DEVELOPMENT_TEAM = 63A36C6Z7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +328,7 @@
 				DEVELOPMENT_TEAM = 63A36C6Z7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
