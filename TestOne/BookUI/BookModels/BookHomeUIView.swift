@@ -34,6 +34,7 @@ struct BookHomeUIView: View {
                 .padding(.vertical, 20)
             }
             .coordinateSpace(name: "SCROLLVIEW")
+            .padding(.top, 15)
         }
     }
     
@@ -42,6 +43,8 @@ struct BookHomeUIView: View {
         GeometryReader {
             let size = $0.size
              let rect = $0.frame(in: .named("SCROLLVIEW"))
+            
+            //let minY = rect.minY
             
             HStack(spacing: -25) {
                 // Book detail card
@@ -66,6 +69,7 @@ struct BookHomeUIView: View {
                         .shadow(color: .black.opacity(0.08), radius: 8, x: -5, y: -5)
                 )
                 .zIndex(1)
+                
                 /// book cover image
                 ZStack {
                     Image(book.imageName).resizable().aspectRatio(contentMode: .fill)
@@ -77,8 +81,17 @@ struct BookHomeUIView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .frame(width: size.width)
+            .rotation3DEffect(.init(degrees: convertOffsetToRotation(rect)), axis: (x: 1, y: 1, z: 0), anchor: .center, anchorZ: 1, perspective: 0.8)
         }
         .frame(height: 220)
+    }
+    
+    func convertOffsetToRotation(_ rect: CGRect) -> CGFloat {
+        let cardHeight = rect.height + 20
+        let minY = rect.minY - 20
+        let progress = minY < 0 ? (minY / cardHeight) : 0
+        let constrainedProgress = min(-progress, 1.0)
+        return constrainedProgress * 90
     }
     
     @ViewBuilder
